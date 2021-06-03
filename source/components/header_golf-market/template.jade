@@ -1,0 +1,216 @@
+// start /components/header_golf-market/
+
+link( rel="stylesheet", href="/components/header_golf-market/style.css" )
+script( src="/components/header_golf-market/script.js" )
+
+#headerGM
+  header.bj-page-header.i-load
+    section.bj-page-header__top
+      .container-fluid
+        .row
+
+          .col-xs-3.col-sm-3.visible-sm-block.visible-xs-block
+            a.ob-menu-sandwich.bj-nav-button( href='#' )
+              span.bj-menu-icon( style="background-image: url( '/template/images/headers/header_golf-market/menu.svg' );" )
+        
+          .col-md-9.col-sm-6.col-xs-6.bj-logo-space
+            span.bj-logo
+              img( src='/template/images/golfmarketlogo.svg' alt='Golf market' )
+              
+            span.bj-page-header__search
+              form( action='/catalog/' )
+                span.bj-page-header__search-icon( style=" background-image: url( '/template/images/headers/header_golf-market/search.svg' );" )
+                input#title-search-input.bj-page-header__search__input.form-control(type='search', name='q', size='23', maxlength='50', autocomplete='off' value='' placeholder="Поиск по каталогу" )
+                input(name='s', type='hidden', value='')
+              
+          .col-md-3.col-sm-3.col-xs-3
+          
+            #personal_menu.bj-personal.hidden-sm.hidden-xs
+              .bj-personal-icon( style="background-image: url( '/upload/logo-pomidor.jpg' );" )
+              
+            span#sale-basket-basket-line-container
+              a#bx_cart_block.bj-cart-icon( href="/personal/cart/" )
+                span.b-shopping-cart( style=" background-image: url( '/template/images/headers/header_golf-market/basket.svg' );" )
+                span#bx_cart_num.bj-cart-icon__num 0
+            
+            span.bj-search-icon.hidden-sm.hidden-xs
+              span( style=" background-image: url( '/template/images/headers/header_golf-market/search.svg' );" )
+                
+            a.bj-earphone-icon(href='#', data-toggle='modal', data-target='#myModal' )
+              span( style="background-image: url( '/template/images/headers/header_golf-market/phone.svg' );" )
+            
+            .bj-page-header__search-close
+
+    section.bj-page-header__sub.hidden-sm.hidden-xs
+      .container-fluid
+        .bj-top-nav.hidden-sm.hidden-xs
+          a.bj-page-header__menu-link(href='#catalog') Каталог
+          a.bj-page-header__menu-link(href='#predzakaz') Предзаказ
+          a(href='/about/delivery/') Доставка и оплата
+          a(href='/about/') Наши магазины
+          a(href='/about/contacts/') Контакты
+    
+    section#cartDropdown.bj-page-header__cart-dropdown( data-url="/ajax-response/header-cart-dropdown-ajax.html" data-method="GET" )
+      .i-relative
+          article
+            .container-fluid
+            .progress
+              .indeterminate
+    
+    include header-dropdown
+    include header-user-dropdown
+            
+    #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+      .modal-dialog(role='document')
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+            |                   
+            h2#myModalLabel.modal-title.text-center &Ncy;&acy;&shcy; &tcy;&iecy;&lcy;&iecy;&fcy;&ocy;&ncy;
+          |                 
+          .modal-body.text-center
+            .bj-text-x-large 8 (495) 212 85 06
+            |                   
+            .small &Pcy;&ncy;-&Vcy;&scy; 10-19
+          |                 
+          .modal-footer.text-center(style='display:none')
+            button.btn.btn-default(type='button') &Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy; &zcy;&vcy;&ocy;&ncy;&ocy;&kcy;
+  
+
+#OBCatalogMenu
+  .limiter.ob-catalog-menu
+    div(class='ob-catalog-menu__block')
+      div(class='ob-catalog-menu__item')
+        a(href='' class='ob-catalog-menu__link') Солнцезащитные очки
+        .ob-catalog-menu-sub
+          a(href='' class='ob-catalog-menu-sub__title')
+            b Все солнцезащитные очки
+          a(href='' class='ob-catalog-menu-sub__item') Alexander McQueen
+          a(href='' class='ob-catalog-menu-sub__item') Andy Wolf
+          a(href='' class='ob-catalog-menu-sub__item') Balenciaga
+          a(href='' class='ob-catalog-menu-sub__item') Belstaff
+          a(href='' class='ob-catalog-menu-sub__item') Bottega Veneta
+          a(href='' class='ob-catalog-menu-sub__item') Boucheron
+          a(href='' class='ob-catalog-menu-sub__item') Brioni
+          a(href='' class='ob-catalog-menu-sub__item') Bvlgari
+          a(href='' class='ob-catalog-menu-sub__item') Carrera
+          a(href='' class='ob-catalog-menu-sub__item') Cartier
+          a(href='' class='ob-catalog-menu-sub__item') Celine
+          a(href='' class='ob-catalog-menu-sub__item') Chloe
+          a(href='' class='ob-catalog-menu-sub__item') Chopard
+          a(href='' class='ob-catalog-menu-sub__item') DITA
+          a(href='' class='ob-catalog-menu-sub__item') Dior
+          a(href='' class='ob-catalog-menu-sub__item') Dolce&amp;Gabbana
+          a(href='' class='ob-catalog-menu-sub__item') Elie Saab
+          a(href='' class='ob-catalog-menu-sub__item') Emilio Pucci
+          a(href='' class='ob-catalog-menu-sub__item') Emporio Armani
+          a(href='' class='ob-catalog-menu-sub__item') Ermenegildo Zenia
+          a(href='' class='ob-catalog-menu-sub__item') Exchange Armani
+          a(href='' class='ob-catalog-menu-sub__item') Fakoshima
+          a(href='' class='ob-catalog-menu-sub__item') Fendi
+          a(href='' class='ob-catalog-menu-sub__item') Fred
+          a(href='' class='ob-catalog-menu-sub__item') George Keburia
+          a(href='' class='ob-catalog-menu-sub__item') Giorgio Armani
+      div(class='ob-catalog-menu__item')
+        a(href='' class='ob-catalog-menu__link') Оправы
+        .ob-catalog-menu-sub
+          a(href='' class='ob-catalog-menu-sub__title')
+            b Все оправы
+          a(href='' class='ob-catalog-menu-sub__item') Alexander McQueen
+          a(href='' class='ob-catalog-menu-sub__item') Andy Wolf
+          a(href='' class='ob-catalog-menu-sub__item') Balenciaga
+          a(href='' class='ob-catalog-menu-sub__item') Belstaff
+          a(href='' class='ob-catalog-menu-sub__item') Bottega Veneta
+          a(href='' class='ob-catalog-menu-sub__item') Boucheron
+          a(href='' class='ob-catalog-menu-sub__item') Brioni
+          a(href='' class='ob-catalog-menu-sub__item') Bvlgari
+          a(href='' class='ob-catalog-menu-sub__item') Carrera
+          a(href='' class='ob-catalog-menu-sub__item') Cartier
+          a(href='' class='ob-catalog-menu-sub__item') Celine
+          a(href='' class='ob-catalog-menu-sub__item') Chloe
+          a(href='' class='ob-catalog-menu-sub__item') Chopard
+          a(href='' class='ob-catalog-menu-sub__item') DITA
+          a(href='' class='ob-catalog-menu-sub__item') Dior
+          a(href='' class='ob-catalog-menu-sub__item') Dolce&amp;Gabbana
+          a(href='' class='ob-catalog-menu-sub__item') Elie Saab
+          a(href='' class='ob-catalog-menu-sub__item') Emilio Pucci
+          a(href='' class='ob-catalog-menu-sub__item') Emporio Armani
+          a(href='' class='ob-catalog-menu-sub__item') Ermenegildo Zenia
+          a(href='' class='ob-catalog-menu-sub__item') Exchange Armani
+          a(href='' class='ob-catalog-menu-sub__item') Fakoshima
+          a(href='' class='ob-catalog-menu-sub__item') Fendi
+          a(href='' class='ob-catalog-menu-sub__item') Fred
+          a(href='' class='ob-catalog-menu-sub__item') George Keburia
+          a(href='' class='ob-catalog-menu-sub__item') Giorgio Armani
+      div(class='ob-catalog-menu__item')
+        a.i-link(href='' class='ob-catalog-menu__link') Распродажа
+      div(class='ob-catalog-menu__item')
+        a(href='' class='ob-catalog-menu__link') Контактные линзы
+        .ob-catalog-menu-sub
+          a(href='' class='ob-catalog-menu-sub__title')
+            b Все контактные линзы
+          a(href='' class='ob-catalog-menu-sub__item') ADRIA
+      div(class='ob-catalog-menu__item')
+        a(href='' class='ob-catalog-menu__link') Аксессуары
+        .ob-catalog-menu-sub
+          a(href='' class='ob-catalog-menu-sub__title')
+            b Все аксессуары
+          a(href='' class='ob-catalog-menu-sub__item') Средства по уходу
+          a(href='' class='ob-catalog-menu-sub__item') Цепочки для очков
+          a(href='' class='ob-catalog-menu-sub__item') Чехлы для очков
+          a(href='' class='ob-catalog-menu-sub__item') Шкатулки для очков
+      div(class='ob-catalog-menu__item')
+        a(href='' class='ob-catalog-menu__link') Распродажа
+        .ob-catalog-menu-sub
+          a(href='' class='ob-catalog-menu-sub__title')
+            b Все распродажи
+          a(href='' class='ob-catalog-menu-sub__item') Оправы
+          a(href='' class='ob-catalog-menu-sub__item') Солнцезащитные очки
+      div(class='ob-catalog-menu__item')
+        a(href='' class='ob-catalog-menu__link') Очки по типам
+        .ob-catalog-menu-sub
+          span(class='ob-catalog-menu-sub__title')
+            b Солнцезащитные очки
+          a(href='' class='ob-catalog-menu-sub__item') Мужские
+          a(href='' class='ob-catalog-menu-sub__item') Женские
+          a(href='' class='ob-catalog-menu-sub__item') Детские
+          a(href='' class='ob-catalog-menu-sub__item') Круглые
+          a(href='' class='ob-catalog-menu-sub__item') Спортивные
+          a(href='' class='ob-catalog-menu-sub__item') Кошачий глаз
+          a(href='' class='ob-catalog-menu-sub__item') Авиаторы
+          a(href='' class='ob-catalog-menu-sub__item') Овальные
+          a(href='' class='ob-catalog-menu-sub__item') С поляризацией
+          a(href='' class='ob-catalog-menu-sub__item') Зеркальные
+          span(class='ob-catalog-menu-sub__title')
+            b Оправы
+          a(href='' class='ob-catalog-menu-sub__item') Женские Vogue
+          a(href='' class='ob-catalog-menu-sub__item') Мужские
+          a(href='' class='ob-catalog-menu-sub__item') Модные
+          a(href='' class='ob-catalog-menu-sub__item') Детские
+          a(href='' class='ob-catalog-menu-sub__item') Круглые
+          a(href='' class='ob-catalog-menu-sub__item') Металлические
+          a(href='' class='ob-catalog-menu-sub__item') Необычные
+          a(href='' class='ob-catalog-menu-sub__item') Прозрачные
+          a(href='' class='ob-catalog-menu-sub__item') Мужские Ray Ban
+          a(href='' class='ob-catalog-menu-sub__item') Женские
+          span(class='ob-catalog-menu-sub__title')
+            b Популярные модели
+          a(href='' class='ob-catalog-menu-sub__item') Мужские Prada
+          a(href='' class='ob-catalog-menu-sub__item') Мужские Gucci
+          a(href='' class='ob-catalog-menu-sub__item') Мужские Ray Ban
+          a(href='' class='ob-catalog-menu-sub__item') Wayfarer
+          a(href='' class='ob-catalog-menu-sub__item') Женские Ray Ban
+          a(href='' class='ob-catalog-menu-sub__item') Aviator
+          a(href='' class='ob-catalog-menu-sub__item') Clubmaster
+          a(href='' class='ob-catalog-menu-sub__item') Junior
+          a(href='' class='ob-catalog-menu-sub__item') Круглые Ray Ban
+          a(href='' class='ob-catalog-menu-sub__item') Highstreet
+
+.ob-search-result( style="top: 415px; left: 0; display: none;" )
+  a(href="") Солнцезащитные <b>очк</b>и
+  a(href="") Стеклянные очки
+  a(href="") Очки Emporio Armani
+  a(href="") Очки Emporio Armani
+
+
+// end /components/header_golf-market/
