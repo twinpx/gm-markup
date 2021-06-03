@@ -1,0 +1,122 @@
+
+<!-- start /components/stories/-->
+<script src="https://unpkg.com/vue@next"></script>
+<script src="https://unpkg.com/vuex@4"></script>
+<link rel="stylesheet" href="/components/stories/style.css"/>
+<script src="/components/stories/script.js"></script>
+<div class="b-stories">
+  <div class="b-stories__preview"> 
+    <div data-id="1" class="b-stories__preview__item i-visited">
+      <div style="background-image: url('/upload/stories.jpg');" class="b-stories__preview__img"></div>
+      <div class="b-stories__preview__text">Название первой истории, оно может быть в три строчки текста, но не более</div>
+    </div>
+    <div data-id="2" class="b-stories__preview__item">
+      <div style="background-image: url('/upload/stories2.jpg');" class="b-stories__preview__img"></div>
+      <div class="b-stories__preview__text">Регулярная езда на велосипеде имеет ряд преимуществ.</div>
+    </div>
+    <div data-id="3" class="b-stories__preview__item">
+      <div style="background-image: url('/upload/stories3.jpg');" class="b-stories__preview__img"></div>
+      <div class="b-stories__preview__text">При регулярной езде в течение часа вы сможете не только получить.</div>
+    </div>
+    <div data-id="4" class="b-stories__preview__item">
+      <div style="background-image: url('/upload/stories4.jpg');" class="b-stories__preview__img"></div>
+      <div class="b-stories__preview__text">Далеко не все потребители знают о том, что можно купить велосипед в интернет-магазине.</div>
+    </div>
+    <div data-id="5" class="b-stories__preview__item">
+      <div style="background-image: url('/upload/stories5.jpg');" class="b-stories__preview__img"></div>
+      <div class="b-stories__preview__text">Новые впечатления от прогулки, но и улучшить физическую форму.</div>
+    </div>
+    <div data-id="6" class="b-stories__preview__item">
+      <div style="background-image: url('/upload/stories7.jpg');" class="b-stories__preview__img"></div>
+      <div class="b-stories__preview__text">Goetze - это стильный городской велосипед.</div>
+    </div>
+  </div>
+  <div class="b-stories__gallery">
+    <div class="b-stories__gallery__close"></div>
+    <script src="/template/libs/swiper.min.js"> </script>
+    <link href="/template/libs/swiper.min.css" rel="stylesheet"/>
+    <div id="storiesGallery" class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="b-stories-card">
+            <div class="b-stories-card__progress-line">
+              <div> </div>
+              <div> </div>
+              <div></div>
+            </div>
+            <div style="background-image: url('/upload/stories.jpg');" class="b-stories-card__media"></div>
+            <div style="background-image: url('/upload/1.jpg');" title="Автор истории" class="b-stories-card__author"></div>
+            <div class="b-stories-card__title">Название первой истории, оно может быть в три строчки текста, но не более Название первой истории, оно может быть в три строчки текста, но не более Название первой истории, оно может быть в три строчки текста, но не более</div>
+            <div class="b-stories-card__button"><a href="" target="_blank" class="btn btn-default">Подробнее </a></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="b-stories-card">
+            <div class="b-stories-card__progress-line">
+              <div> </div>
+              <div> </div>
+              <div></div>
+            </div>
+            <div style="background-image: url('/upload/stories2.jpg');" class="b-stories-card__media"></div>
+            <div style="background-image: url('/upload/1.jpg');" title="Автор истории" class="b-stories-card__author"></div>
+            <div class="b-stories-card__title">Регулярная езда на велосипеде имеет ряд преимуществ.</div>
+            <div class="b-stories-card__button"><a href="" target="_blank" class="btn btn-default">Подробнее </a></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="b-stories-card">
+            <div class="b-stories-card__progress-line">
+              <div> </div>
+              <div> </div>
+              <div></div>
+            </div>
+            <div style="background-image: url('/upload/stories3.jpg');" class="b-stories-card__media"></div>
+            <div style="background-image: url('/upload/1.jpg');" title="Автор истории" class="b-stories-card__author"></div>
+            <div class="b-stories-card__title">При регулярной езде в течение часа вы сможете не только получить.</div>
+            <div class="b-stories-card__button"><a href="" target="_blank" class="btn btn-default">Подробнее </a></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="b-stories-card">
+            <div class="b-stories-card__progress-line">
+              <div> </div>
+              <div> </div>
+              <div></div>
+            </div>
+            <div style="background-image: url('/upload/stories4.jpg');" class="b-stories-card__media"></div>
+            <div style="background-image: url('/upload/1.jpg');" title="Автор истории" class="b-stories-card__author"></div>
+            <div class="b-stories-card__title">Далеко не все потребители знают о том, что можно купить велосипед в интернет-магазине.</div>
+            <div class="b-stories-card__button"><a href="" target="_blank" class="btn btn-default">Подробнее </a></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="b-stories-card">
+            <div class="b-stories-card__progress-line">
+              <div> </div>
+              <div> </div>
+              <div></div>
+            </div>
+            <div style="background-image: url('/upload/stories5.jpg');" class="b-stories-card__media"></div>
+            <div style="background-image: url('/upload/1.jpg');" title="Автор истории" class="b-stories-card__author"></div>
+            <div class="b-stories-card__title">Новые впечатления от прогулки, но и улучшить физическую форму.</div>
+            <div class="b-stories-card__button"><a href="" target="_blank" class="btn btn-default">Подробнее </a></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="b-stories-card">
+            <div class="b-stories-card__progress-line">
+              <div> </div>
+              <div> </div>
+              <div></div>
+            </div>
+            <div style="background-image: url('/upload/stories7.jpg');" class="b-stories-card__media"></div>
+            <div style="background-image: url('/upload/1.jpg');" title="Автор истории" class="b-stories-card__author"></div>
+            <div class="b-stories-card__title">Goetze - это стильный городской велосипед.</div>
+            <div class="b-stories-card__button"><a href="" target="_blank" class="btn btn-default">Подробнее </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end /components/stories/-->

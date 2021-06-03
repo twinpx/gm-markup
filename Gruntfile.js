@@ -59,8 +59,7 @@ module.exports = function( grunt ) {
             src: [
               '**/*.jade',
               '!layouts/**/*.jade',
-              '!modules/**/*.jade',
-              '!components/**/*.jade'
+              '!modules/**/*.jade'
             ],
             dest: '<%= temp%>',
             ext: '.html',
