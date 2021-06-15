@@ -10,25 +10,23 @@
       
     a.b-catalog-element__title( href="/catalog/detail/" itemprop="name" title="Домашние тапочки O'Neil Домашние тапочки O'Neil" ) Домашние тапочки O'Neil Домашние тапочки O'Neil
     
-    hr.i-line
     hr
     
-    .b-catalog-element__price 2000 руб.
+    .b-catalog-element__price-wrapper 
+
+      .b-catalog-element__price 2000 руб.
+            
+      .b-catalog-element__button
+        a.btn.btn-default.btn-size-S( href="/personal/cart/" data-ajax-url="/components/catalog.detail/buy.json" )
+          span.i-show Купить
+          span В корзине
+          
+      .b-catalog-element__subscribe
+        a.btn.btn-default.btn-size-S( href="#" data-toggle="modal" data-target="#subscribeModal" data-ajax-url="/components/catalog.collection/subscribe.html?somedata=value" ) Подписаться
     
     .b-catalog-element__bottom
     
       div
-        .b-catalog-element__price 2000 руб.
-          
-        .b-catalog-element__button
-          a.btn.btn-default.btn-size-S( href="/personal/cart/" data-ajax-url="/components/catalog.detail/buy.json" )
-            span.i-show Купить
-            span В корзине
-          
-        .b-catalog-element__subscribe
-          a.btn.btn-default.btn-size-S( href="#" data-toggle="modal" data-target="#subscribeModal" data-ajax-url="/components/catalog.collection/subscribe.html?somedata=value" ) Подписаться
-          
-      hr.i-size-S
           
       .b-catalog-element__props
         div Материал трикотаж
