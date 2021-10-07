@@ -1,0 +1,127 @@
+
+<!-- start /components/header_golf-market2/-->
+<link rel="stylesheet" href="/components/header_golf-market2/style.css"/>
+<script src="/components/header_golf-market2/script.js"></script>
+<div id="headerGM">
+  <header class="bj-page-header i-load">
+    <section class="bj-page-header__top">
+      <div class="container-fluid">
+        <div class="bj-menu-icon-space visible-sm-block visible-xs-block"><a href="#" class="ob-menu-sandwich bj-nav-button"><span style="background-image: url('template/images/headers/header_golf-market/menu.svg');" class="bj-menu-icon"></span></a></div>
+        <div class="bj-logo-space"><span class="bj-logo"><img src="template/images/golfmarketlogo.svg" alt="Golf market" width="106"/></span></div>
+        <div class="bj-menu-space">
+          <div class="bj-menu-space__top hidden-sm hidden-xs">
+            <div class="bj-page-header__sub"><a href="">Доставка и оплата</a><a href="">LookBook</a><a href="">Наши магазины</a><a href="">Новости</a><a href="">Контакты</a></div>
+            <div class="bj-page-header__address"><a href="tel:+74951366403">+7 (495) 136 64 03</a><span>Москва, Берсеневский переулок д. 5, стр. 2</span></div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 col-sm-8 col-xs-8 hidden-sm hidden-xs">
+              <div class="bj-top-nav"><a href="#catalog">Клюшки</a><a href="#predzakaz" class="bj-page-header__menu-link">Одежда</a><a href="/about/delivery/">Мячи</a><a href="/about/">Перчатки</a><a href="#catalog" class="bj-page-header__menu-link">Бэги</a><a href="/about/contacts/">Аксессуары</a></div><span class="bj-page-header__search">
+                <form action="/catalog/"><span style="background-image: url('/template/images/headers/header_golf-market/search.svg');" class="bj-page-header__search-icon"></span>
+                  <input id="title-search-input" type="search" name="q" size="23" maxlength="50" autocomplete="off" value="" placeholder="Поиск по каталогу" class="bj-page-header__search__input form-control"/>
+                  <input name="s" type="hidden" value=""/>
+                </form></span>
+            </div>
+            <div class="col-md-4 text-right">
+              <div id="personal_menu" class="bj-personal hidden-sm hidden-xs">
+                <div style="background-image: url('/upload/logo-pomidor.jpg')" class="bj-personal-icon"></div>
+              </div><span id="sale-basket-basket-line-container"><a id="bx_cart_block" href="/personal/cart/" class="bj-cart-icon"><span style="background-image: url('/template/images/headers/header_golf-market/basket.svg');" class="b-shopping-cart"></span><span id="bx_cart_num" class="bj-cart-icon__num">0</span></a></span><span class="bj-search-icon hidden-sm hidden-xs"><span style="background-image: url('/template/images/headers/header_golf-market/search.svg');"></span></span><a href="#" data-toggle="modal" data-target="#myModal" class="bj-earphone-icon"><span style="background-image: url('/template/images/headers/header_golf-market/phone.svg');"></span></a>
+              <div class="bj-page-header__search-close"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cartDropdown" data-url="/ajax-response/header-cart-dropdown-ajax.html" data-method="GET" class="bj-page-header__cart-dropdown">
+      <div class="i-relative">
+        <article>
+          <div class="container-fluid"></div>
+          <div class="progress">
+            <div class="indeterminate"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="catalog" class="bj-page-header__dropdown">
+      <div class="i-relative">
+        <article>
+          <div class="container-fluid">
+            <div class="bj-page-header__dropdown-hr"></div>
+            <div class="bj-page-header__dropdown-container">
+              <div class="bj-page-header__dropdown-links"><a href="">Игровые мячи</a><a href="">Тренировочные</a><a href="">Дальномеры</a><a href="">Другое</a><a href="">Зонты</a><a href="">Маты тренировочные</a><a href="">Полотенца</a><a href="">Тележки</a><a href="">Ти</a><a href="">Тренажеры</a><a href="">Мини гольфи</a></div>
+              <div class="bj-page-header__dropdown-banner"><img src="/upload/stories4.jpg" alt=""/></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="predzakaz" class="bj-page-header__dropdown">
+      <div class="i-relative">
+        <article>
+          <div class="container-fluid">
+            <div class="bj-page-header__dropdown-hr"></div>
+            <div class="bj-page-header__dropdown-container">
+              <div class="bj-page-header__dropdown-links"><a href="">Игровые мячи</a><a href="">Тренировочные</a><a href="">Дальномеры</a></div>
+              <div class="bj-page-header__dropdown-banner"><img src="/upload/stories3.jpg" alt=""/></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="userDropdown" class="bj-page-header__user-dropdown">
+      <div class="i-relative">
+        <article>
+          <div class="container-fluid"><a href="">Войти</a><a href="">Регистрация</a>
+            <hr/><a href="">tatiana</a><a href="">Мои заказы</a><a href="">Выйти</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"></button>
+            <h2 id="myModalLabel" class="modal-title text-center">&Ncy;&acy;&shcy; &tcy;&iecy;&lcy;&iecy;&fcy;&ocy;&ncy;</h2>
+          </div>
+          <div class="modal-body text-center">
+            <div class="bj-text-x-large">8 (495) 212 85 06</div>
+            <div class="small">&Pcy;&ncy;-&Vcy;&scy; 10-19</div>
+          </div>
+          <div style="display: none" class="modal-footer text-center">
+            <button type="button" class="btn btn-default">
+              &Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy;
+              &zcy;&vcy;&ocy;&ncy;&ocy;&kcy;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+<div id="OBCatalogMenu">
+  <div class="limiter ob-catalog-menu">
+    <div class="ob-catalog-menu__block">
+      <div class="ob-catalog-menu__item"><a href="" class="ob-catalog-menu__link">Солнцезащитные очки</a>
+        <div class="ob-catalog-menu-sub"><a href="" class="ob-catalog-menu-sub__title"><b>Все солнцезащитные очки</b></a><a href="" class="ob-catalog-menu-sub__item">Alexander McQueen</a><a href="" class="ob-catalog-menu-sub__item">Andy Wolf</a><a href="" class="ob-catalog-menu-sub__item">Balenciaga</a><a href="" class="ob-catalog-menu-sub__item">Belstaff</a><a href="" class="ob-catalog-menu-sub__item">Bottega Veneta</a><a href="" class="ob-catalog-menu-sub__item">Boucheron</a><a href="" class="ob-catalog-menu-sub__item">Brioni</a><a href="" class="ob-catalog-menu-sub__item">Bvlgari</a><a href="" class="ob-catalog-menu-sub__item">Carrera</a><a href="" class="ob-catalog-menu-sub__item">Cartier</a><a href="" class="ob-catalog-menu-sub__item">Celine</a><a href="" class="ob-catalog-menu-sub__item">Chloe</a><a href="" class="ob-catalog-menu-sub__item">Chopard</a><a href="" class="ob-catalog-menu-sub__item">DITA</a><a href="" class="ob-catalog-menu-sub__item">Dior</a><a href="" class="ob-catalog-menu-sub__item">Dolce&amp;Gabbana</a><a href="" class="ob-catalog-menu-sub__item">Elie Saab</a><a href="" class="ob-catalog-menu-sub__item">Emilio Pucci</a><a href="" class="ob-catalog-menu-sub__item">Emporio Armani</a><a href="" class="ob-catalog-menu-sub__item">Ermenegildo Zenia</a><a href="" class="ob-catalog-menu-sub__item">Exchange Armani</a><a href="" class="ob-catalog-menu-sub__item">Fakoshima</a><a href="" class="ob-catalog-menu-sub__item">Fendi</a><a href="" class="ob-catalog-menu-sub__item">Fred</a><a href="" class="ob-catalog-menu-sub__item">George Keburia</a><a href="" class="ob-catalog-menu-sub__item">Giorgio Armani</a></div>
+      </div>
+      <div class="ob-catalog-menu__item"><a href="" class="ob-catalog-menu__link">Оправы</a>
+        <div class="ob-catalog-menu-sub"><a href="" class="ob-catalog-menu-sub__title"><b>Все оправы</b></a><a href="" class="ob-catalog-menu-sub__item">Alexander McQueen</a><a href="" class="ob-catalog-menu-sub__item">Andy Wolf</a><a href="" class="ob-catalog-menu-sub__item">Balenciaga</a><a href="" class="ob-catalog-menu-sub__item">Belstaff</a><a href="" class="ob-catalog-menu-sub__item">Bottega Veneta</a><a href="" class="ob-catalog-menu-sub__item">Boucheron</a><a href="" class="ob-catalog-menu-sub__item">Brioni</a><a href="" class="ob-catalog-menu-sub__item">Bvlgari</a><a href="" class="ob-catalog-menu-sub__item">Carrera</a><a href="" class="ob-catalog-menu-sub__item">Cartier</a><a href="" class="ob-catalog-menu-sub__item">Celine</a><a href="" class="ob-catalog-menu-sub__item">Chloe</a><a href="" class="ob-catalog-menu-sub__item">Chopard</a><a href="" class="ob-catalog-menu-sub__item">DITA</a><a href="" class="ob-catalog-menu-sub__item">Dior</a><a href="" class="ob-catalog-menu-sub__item">Dolce&amp;Gabbana</a><a href="" class="ob-catalog-menu-sub__item">Elie Saab</a><a href="" class="ob-catalog-menu-sub__item">Emilio Pucci</a><a href="" class="ob-catalog-menu-sub__item">Emporio Armani</a><a href="" class="ob-catalog-menu-sub__item">Ermenegildo Zenia</a><a href="" class="ob-catalog-menu-sub__item">Exchange Armani</a><a href="" class="ob-catalog-menu-sub__item">Fakoshima</a><a href="" class="ob-catalog-menu-sub__item">Fendi</a><a href="" class="ob-catalog-menu-sub__item">Fred</a><a href="" class="ob-catalog-menu-sub__item">George Keburia</a><a href="" class="ob-catalog-menu-sub__item">Giorgio Armani</a></div>
+      </div>
+      <div class="ob-catalog-menu__item"><a href="" class="i-link ob-catalog-menu__link">Распродажа</a></div>
+      <div class="ob-catalog-menu__item"><a href="" class="ob-catalog-menu__link">Контактные линзы</a>
+        <div class="ob-catalog-menu-sub"><a href="" class="ob-catalog-menu-sub__title"><b>Все контактные линзы</b></a><a href="" class="ob-catalog-menu-sub__item">ADRIA</a></div>
+      </div>
+      <div class="ob-catalog-menu__item"><a href="" class="ob-catalog-menu__link">Аксессуары</a>
+        <div class="ob-catalog-menu-sub"><a href="" class="ob-catalog-menu-sub__title"><b>Все аксессуары</b></a><a href="" class="ob-catalog-menu-sub__item">Средства по уходу</a><a href="" class="ob-catalog-menu-sub__item">Цепочки для очков</a><a href="" class="ob-catalog-menu-sub__item">Чехлы для очков</a><a href="" class="ob-catalog-menu-sub__item">Шкатулки для очков</a></div>
+      </div>
+      <div class="ob-catalog-menu__item"><a href="" class="ob-catalog-menu__link">Распродажа</a>
+        <div class="ob-catalog-menu-sub"><a href="" class="ob-catalog-menu-sub__title"><b>Все распродажи</b></a><a href="" class="ob-catalog-menu-sub__item">Оправы</a><a href="" class="ob-catalog-menu-sub__item">Солнцезащитные очки</a></div>
+      </div>
+      <div class="ob-catalog-menu__item"><a href="" class="ob-catalog-menu__link">Очки по типам</a>
+        <div class="ob-catalog-menu-sub"><span class="ob-catalog-menu-sub__title"><b>Солнцезащитные очки</b></span><a href="" class="ob-catalog-menu-sub__item">Мужские</a><a href="" class="ob-catalog-menu-sub__item">Женские</a><a href="" class="ob-catalog-menu-sub__item">Детские</a><a href="" class="ob-catalog-menu-sub__item">Круглые</a><a href="" class="ob-catalog-menu-sub__item">Спортивные</a><a href="" class="ob-catalog-menu-sub__item">Кошачий глаз</a><a href="" class="ob-catalog-menu-sub__item">Авиаторы</a><a href="" class="ob-catalog-menu-sub__item">Овальные</a><a href="" class="ob-catalog-menu-sub__item">С поляризацией</a><a href="" class="ob-catalog-menu-sub__item">Зеркальные</a><span class="ob-catalog-menu-sub__title"><b>Оправы</b></span><a href="" class="ob-catalog-menu-sub__item">Женские Vogue</a><a href="" class="ob-catalog-menu-sub__item">Мужские</a><a href="" class="ob-catalog-menu-sub__item">Модные</a><a href="" class="ob-catalog-menu-sub__item">Детские</a><a href="" class="ob-catalog-menu-sub__item">Круглые</a><a href="" class="ob-catalog-menu-sub__item">Металлические</a><a href="" class="ob-catalog-menu-sub__item">Необычные</a><a href="" class="ob-catalog-menu-sub__item">Прозрачные</a><a href="" class="ob-catalog-menu-sub__item">Мужские Ray Ban</a><a href="" class="ob-catalog-menu-sub__item">Женские</a><span class="ob-catalog-menu-sub__title"><b>Популярные модели</b></span><a href="" class="ob-catalog-menu-sub__item">Мужские Prada</a><a href="" class="ob-catalog-menu-sub__item">Мужские Gucci</a><a href="" class="ob-catalog-menu-sub__item">Мужские Ray Ban</a><a href="" class="ob-catalog-menu-sub__item">Wayfarer</a><a href="" class="ob-catalog-menu-sub__item">Женские Ray Ban</a><a href="" class="ob-catalog-menu-sub__item">Aviator</a><a href="" class="ob-catalog-menu-sub__item">Clubmaster</a><a href="" class="ob-catalog-menu-sub__item">Junior</a><a href="" class="ob-catalog-menu-sub__item">Круглые Ray Ban</a><a href="" class="ob-catalog-menu-sub__item">Highstreet</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="top: 415px; left: 0; display: none" class="ob-search-result"><a href="">Солнцезащитные <b>очк</b>и</a><a href="">Стеклянные очки</a><a href="">Очки Emporio Armani</a><a href="">Очки Emporio Armani</a></div>
+<!-- end /components/header_golf-market2/-->

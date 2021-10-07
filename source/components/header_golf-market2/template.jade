@@ -5,93 +5,113 @@ script( src="/components/header_golf-market2/script.js" )
 
 #headerGM
   header.bj-page-header.i-load
-    section.bj-page-header__top
+    section(class='bj-page-header__top')
       .container-fluid
-        .row
-
-          .col-xs-3.col-sm-3.visible-sm-block.visible-xs-block
-            a.ob-menu-sandwich.bj-nav-button( href='#' )
-              span.bj-menu-icon( style="background-image: url( '/template/images/headers/header_golf-market/menu.svg' );" )
-        
-          .col-md-2.col-sm-6.col-xs-6.bj-logo-space
-            span.bj-logo
-              img( src='/template/images/golfmarketlogo.svg' alt='Golf market' )
-
-          .col-md-10
-
-            .row.hidden-sm.hidden-xs
-              .col-md-7.col-sm-7.col-xs-7.bj-page-header__sub
-                a(href='') Доставка и оплата
-                a(href='') LookBook
-                a(href='') Наши магазины
-                a(href='') Новости
-                a(href='') Контакты
-              .col-md-5.col-sm-5.col-xs-5.bj-page-header__address
-                a(href="tel:+74951366403") +7 (495) 136 64 03
-                span Москва, Берсеневский переулок д. 5, стр. 2
-
-            .row.hidden-sm.hidden-xs
-
-              .col-md-8.col-sm-8.col-xs-8
-
-                .bj-top-nav
-                  a(href='#catalog') Клюшки
-                  a.bj-page-header__menu-link(href='#predzakaz') Одежда
-                  a(href='/about/delivery/') Мячи
-                  a(href='/about/') Перчатки
-                  a.bj-page-header__menu-link(href='#catalog') Бэги
-                  a(href='/about/contacts/') Аксессуары
-
-                span.bj-page-header__search
-                  form( action='/catalog/' )
-                    span.bj-page-header__search-icon( style=" background-image: url( '/template/images/headers/header_golf-market/search.svg' );" )
-                    input#title-search-input.bj-page-header__search__input.form-control(type='search', name='q', size='23', maxlength='50', autocomplete='off' value='' placeholder="Поиск по каталогу" )
-                    input(name='s', type='hidden', value='')
-
-              .col-md-4.col-sm-4.col-xs-4.text-right
-        
-                #personal_menu.bj-personal.hidden-sm.hidden-xs
-                  .bj-personal-icon( style="background-image: url( '/upload/logo-pomidor.jpg' );" )
-                  
-                span#sale-basket-basket-line-container
-                  a#bx_cart_block.bj-cart-icon( href="/personal/cart/" )
-                    span.b-shopping-cart( style=" background-image: url( '/template/images/headers/header_golf-market/basket.svg' );" )
-                    span#bx_cart_num.bj-cart-icon__num 0
-                
-                span.bj-search-icon.hidden-sm.hidden-xs
-                  span( style=" background-image: url( '/template/images/headers/header_golf-market/search.svg' );" )
-                    
-                a.bj-earphone-icon(href='#', data-toggle='modal', data-target='#myModal' )
-                  span( style="background-image: url( '/template/images/headers/header_golf-market/phone.svg' );" )
-                
-                .bj-page-header__search-close
-
-    section#cartDropdown.bj-page-header__cart-dropdown( data-url="/ajax-response/header-cart-dropdown-ajax.html" data-method="GET" )
+        .bj-menu-icon-space.visible-sm-block.visible-xs-block
+          a.ob-menu-sandwich.bj-nav-button(href='#')
+            span.bj-menu-icon(style="background-image: url('template/images/headers/header_golf-market/menu.svg');")
+        .bj-logo-space
+          span.bj-logo
+            img(src='template/images/golfmarketlogo.svg' alt='Golf market' width='106')
+        .bj-menu-space
+          div(class='bj-menu-space__top hidden-sm hidden-xs')
+            div(class='bj-page-header__sub')
+              a(href='') Доставка и оплата
+              a(href='') LookBook
+              a(href='') Наши магазины
+              a(href='') Новости
+              a(href='') Контакты
+            div(class='bj-page-header__address')
+              a(href='tel:+74951366403') +7 (495) 136 64 03
+              span Москва, Берсеневский переулок д. 5, стр. 2
+          .row
+            .col-md-8.col-sm-8.col-xs-8.hidden-sm.hidden-xs
+              .bj-top-nav
+                a(href='#catalog') Клюшки
+                a(href='#predzakaz' class='bj-page-header__menu-link') Одежда
+                a(href='/about/delivery/') Мячи
+                a(href='/about/') Перчатки
+                a(href='#catalog' class='bj-page-header__menu-link') Бэги
+                a(href='/about/contacts/') Аксессуары
+              span(class='bj-page-header__search')
+                form(action='/catalog/')
+                  span(style="background-image: url('/template/images/headers/header_golf-market/search.svg');" class='bj-page-header__search-icon')
+                  input#title-search-input(type='search' name='q' size='23' maxlength='50' autocomplete='off' value='' placeholder='Поиск по каталогу' class='bj-page-header__search__input form-control')
+                  input(name='s' type='hidden' value='')
+            .col-md-4.text-right
+              .bj-personal.hidden-sm.hidden-xs(id='personal_menu')
+                .bj-personal-icon(style="background-image: url('/upload/logo-pomidor.jpg')")
+              span#sale-basket-basket-line-container
+                a.bj-cart-icon(id='bx_cart_block' href='/personal/cart/')
+                  span.b-shopping-cart(style="background-image: url('/template/images/headers/header_golf-market/basket.svg');")
+                  span(id='bx_cart_num' class='bj-cart-icon__num') 0
+              span.bj-search-icon.hidden-sm.hidden-xs
+                span(style="background-image: url('/template/images/headers/header_golf-market/search.svg');")
+              a.bj-earphone-icon(href='#' data-toggle='modal' data-target='#myModal')
+                span(style="background-image: url('/template/images/headers/header_golf-market/phone.svg');")
+              div(class='bj-page-header__search-close')
+    section#cartDropdown(data-url='/ajax-response/header-cart-dropdown-ajax.html' data-method='GET' class='bj-page-header__cart-dropdown')
       .i-relative
-          article
-            .container-fluid
-            .progress
-              .indeterminate
-    
-    include header-dropdown
-    include header-user-dropdown
-            
-    #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+        article
+          .container-fluid
+          .progress
+            .indeterminate
+    section#catalog(class='bj-page-header__dropdown')
+      .i-relative
+        article
+          .container-fluid
+            div(class='bj-page-header__dropdown-hr')
+            div(class='bj-page-header__dropdown-container')
+              div(class='bj-page-header__dropdown-links')
+                a(href='') Игровые мячи
+                a(href='') Тренировочные
+                a(href='') Дальномеры
+                a(href='') Другое
+                a(href='') Зонты
+                a(href='') Маты тренировочные
+                a(href='') Полотенца
+                a(href='') Тележки
+                a(href='') Ти
+                a(href='') Тренажеры
+                a(href='') Мини гольфи
+              div(class='bj-page-header__dropdown-banner')
+                img(src='/upload/stories4.jpg' alt='')
+    section#predzakaz(class='bj-page-header__dropdown')
+      .i-relative
+        article
+          .container-fluid
+            div(class='bj-page-header__dropdown-hr')
+            div(class='bj-page-header__dropdown-container')
+              div(class='bj-page-header__dropdown-links')
+                a(href='') Игровые мячи
+                a(href='') Тренировочные
+                a(href='') Дальномеры
+              div(class='bj-page-header__dropdown-banner')
+                img(src='/upload/stories3.jpg' alt='')
+    section#userDropdown(class='bj-page-header__user-dropdown')
+      .i-relative
+        article
+          .container-fluid
+            a(href='') Войти
+            a(href='') Регистрация
+            hr
+            a(href='') tatiana
+            a(href='') Мои заказы
+            a(href='') Выйти
+    #myModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='myModalLabel')
       .modal-dialog(role='document')
         .modal-content
           .modal-header
-            button.close(type='button', data-dismiss='modal', aria-label='Close')
-            |                   
-            h2#myModalLabel.modal-title.text-center &Ncy;&acy;&shcy; &tcy;&iecy;&lcy;&iecy;&fcy;&ocy;&ncy;
-          |                 
+            button.close(type='button' data-dismiss='modal' aria-label='Close')
+            h2#myModalLabel.modal-title.text-center
+              | &Ncy;&acy;&shcy; &tcy;&iecy;&lcy;&iecy;&fcy;&ocy;&ncy;
           .modal-body.text-center
             .bj-text-x-large 8 (495) 212 85 06
-            |                   
             .small &Pcy;&ncy;-&Vcy;&scy; 10-19
-          |                 
-          .modal-footer.text-center(style='display:none')
-            button.btn.btn-default(type='button') &Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy; &zcy;&vcy;&ocy;&ncy;&ocy;&kcy;
-
+          .modal-footer.text-center(style='display: none')
+            button.btn.btn-default(type='button')
+              | &Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy;
+              | &zcy;&vcy;&ocy;&ncy;&ocy;&kcy;
 #OBCatalogMenu
   .limiter.ob-catalog-menu
     div(class='ob-catalog-menu__block')
@@ -158,7 +178,7 @@ script( src="/components/header_golf-market2/script.js" )
           a(href='' class='ob-catalog-menu-sub__item') George Keburia
           a(href='' class='ob-catalog-menu-sub__item') Giorgio Armani
       div(class='ob-catalog-menu__item')
-        a.i-link(href='' class='ob-catalog-menu__link') Распродажа
+        a(href='' class='i-link ob-catalog-menu__link') Распродажа
       div(class='ob-catalog-menu__item')
         a(href='' class='ob-catalog-menu__link') Контактные линзы
         .ob-catalog-menu-sub
@@ -220,12 +240,13 @@ script( src="/components/header_golf-market2/script.js" )
           a(href='' class='ob-catalog-menu-sub__item') Junior
           a(href='' class='ob-catalog-menu-sub__item') Круглые Ray Ban
           a(href='' class='ob-catalog-menu-sub__item') Highstreet
-
-.ob-search-result( style="top: 415px; left: 0; display: none;" )
-  a(href="") Солнцезащитные <b>очк</b>и
-  a(href="") Стеклянные очки
-  a(href="") Очки Emporio Armani
-  a(href="") Очки Emporio Armani
+.ob-search-result(style='top: 415px; left: 0; display: none')
+  a(href='') Солнцезащитные 
+    b очк
+    | и
+  a(href='') Стеклянные очки
+  a(href='') Очки Emporio Armani
+  a(href='') Очки Emporio Armani
 
 
 // end /components/header_golf-market2/
