@@ -43,7 +43,7 @@
         e.stopPropagation();
         clearTimeout(headerGMMenuTimeoutId);
         headerGMMenuTimeoutId = setTimeout(function () {
-          var id = e.target.getAttribute('href');
+          var id = e.target.getAttribute('data-sub');
           var $article = $(id + ' article');
 
           //hide menu and user dropdown
