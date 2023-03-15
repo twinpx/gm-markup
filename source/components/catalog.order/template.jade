@@ -1,0 +1,33 @@
+﻿// start /components/catalog.order/
+
+link( rel="stylesheet", href="/components/catalog.order/style.css" )
+script( src="/components/catalog.order/script.js" )
+
+.b-catalog-order
+
+  .b-catalog-order__action 
+    .b-catalog-order__icon(style="background-image: url('images/empty-wallet.svg');")
+    .b-catalog-order__subtitle Оплата заказа
+    .b-catalog-order__title Оплата банковской картой или системой быстрых платежей
+    .b-catalog-order__p Услугу предоставляет сервис онлайн-платежей «ЮKassa».<br>Сумма к оплате по счету: 26 900 руб.
+    .btn.btn-size-L Оплатить заказ
+
+  .b-catalog-order__info
+    .b-catalog-order__icon(style="background-image: url('images/receipt-text.svg');")
+
+    .b-catalog-order__block
+
+      .b-catalog-order__row
+        .b-catalog-order__number
+          div Номер заказа
+          b 825/28/12/2022
+        .b-catalog-order__time
+          div Время заказа
+          i 28.12.2022<br>10:58:13
+        .b-catalog-order__payment
+          div Номер оплаты:
+          b 825/28/12/2022/1
+      .b-catalog-order__p Вы можете следить за выполнением своего заказа в Персональном разделе сайта. Обратите внимание, что для входа в этот раздел вам необходимо будет ввести логин и пароль пользователя сайта.
+      .btn.btn-default Перейти в персональный раздел
+
+// end /components/catalog.order/

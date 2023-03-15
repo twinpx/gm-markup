@@ -1,4 +1,4 @@
-﻿extends ../layouts/main.jade
+﻿extends ../../layouts/main.jade
 
 block title
   title Catalog page | Seller
@@ -31,9 +31,9 @@ block content
         .col-sm-8
           h1 Верблюжье пальто
         .col-sm-4
-          include ../modules/catalog-tags/include
+          include ../../modules/catalog-tags/include
       
-      include ../modules/theme-photo/include
+      include ../../modules/theme-photo/include
       
       hr.hidden-xs
       hr.i-size-L.visible-xs-block
@@ -42,7 +42,7 @@ block content
       
         .col-sm-3
           
-          include ../components/catalog.collection/menu
+          include ../../components/catalog.collection/menu
             
         hr.visible-xs-block.i-size-L
         
@@ -69,17 +69,17 @@ block content
             hr.visible-xs
                 
             .col-sm-6.text-right.hidden-xs
-              include ../modules/pagination/include
+              include ../../modules/pagination/include
           
           hr.i-line.i-size-L
           
           .b-catalog-section
               
-            include ../components/catalog.collection/meta
-            include ../components/catalog.collection/modals
-            include ../modules/gallery/fotorama
+            include ../../components/catalog.collection/meta
+            include ../../components/catalog.collection/modals
+            include ../../modules/gallery/fotorama
               
-            include ../components/catalog.collection/template-3
+            include ../../components/catalog.collection/template-3
                 
       hr.visible-xs
     
@@ -87,6 +87,6 @@ block content
             
         .col-sm-6.col-sm-offset-6.text-right
           
-          include ../modules/pagination/include
+          include ../../modules/pagination/include
           
       hr

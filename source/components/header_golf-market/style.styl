@@ -548,12 +548,14 @@
             top 12px
             right -3px
             width 30px
+            border-color #fff
             
           &:after
             transform( rotate( -45deg ))
             top 12px
             right -3px
             width 30px
+            border-color #fff
 
       @media(max-width 991px)
         display block
@@ -565,15 +567,27 @@
 
         &__input
           background-color #F4F4F4 !important
+          transition(background-color .3s ease)
           border-radius 4px
           padding 10px 62px 10px 15px
           height 48px
 
+          &:focus
+            background-color #8A00C7 !important
+            color #fff
+
+            + svg path
+              fill #fff;
+
+
         &-icon
           right 15px
           left auto
-          width 24px
-          height 24px
+          width 20px
+          height 20px
+
+          path
+            fill #1b1b1b;
 
   .bj-logo
     font-size 18pt
@@ -1158,4 +1172,132 @@
   a.ob-catalog-menu__link:focus {
     opacity: 1;
   }
+}
+
+div.title-search-result {
+  width: 100vw !important;
+  left: 0 !important;
+	box-shadow: 0px 3px 20px #0000001A;
+	border-radius: 4px;
+}
+
+div.title-search-result {
+	/*display: none;*/
+	overflow: hidden;
+	z-index: 999;
+	max-width: calc( 1200px - 30px ) !important;
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.05);
+	box-shadow: 0 0 20px rgba(0,0,0,0.05);
+	border-radius: 0;
+  margin-top: 8px;
+}
+
+div.title-search-result .bx_searche {
+  padding: 28px 0 32px;
+}
+
+div.title-search-fader {
+	display: none;
+	background-image: url('/bitrix/templates/bejetstore_purple_white/components/bitrix/search.title/simple/images/fader.png');
+	background-position: right top;
+	background-repeat: repeat-y;
+	position: absolute
+}
+
+p.title-search-preview {
+	font-size: 12px
+}
+
+div.title-search-result td.title-search-price span {
+	font-size: 26px
+}
+
+.bx_searche .bx_item_block {
+	min-height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 32px;
+}
+
+.bx_searche .bx_img_element {
+	width: 32px;
+}
+
+.bx_searche .bx_image {
+	width: 32px;
+	height: 32px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bx_searche .bx_image.i-empty {
+  background-color: #f2f2f2;
+}
+
+.bx_searche .bx_item_element {
+	padding-left: 15px;
+  text-align: left;
+  width: calc( 100% - 32px );
+  font-size: 12px;
+}
+
+.bx_searche a .bx_item_element {
+	color: #000;
+}
+
+.bx_searche .bx_item_element b {
+	color: #000000;
+	font-weight: bold
+}
+
+.bx_searche .bx_item_element a:hover {
+	text-decoration: none
+}
+
+.bx_searche .bx_price {
+	font-size: 12px;
+  font-weight: 400;
+	color: #666666;
+}
+
+.bx_searche .bx_price .old {
+	font-weight: normal;
+	text-decoration: line-through;
+	color: #636363
+}
+
+.bx_item_block.all_result {
+	min-height: 0;
+  font-size 12px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.bx_item_block.others_result {
+	min-height: 0;
+	padding: 0 0 12px;
+	line-height: 12px
+}
+
+.bx_item_block.all_result .all_result_title {
+	display: block;
+	color: #a7a7a7;
+	padding-top: 15px;
+	padding-bottom: 10px
+}
+
+.bx_item_block.all_result .all_result_title a {
+	color: #a7a7a7
+}
+
+.bx_item_block.all_result .all_result_title a:hover {
+	color: #4788cb
+}
+
+.bx_item_block.all_result a {
+	margin-top: 0;
+  color: #000;
 }

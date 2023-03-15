@@ -334,19 +334,29 @@
           });
         });
 
-      document
-        .getElementById('title-search-input')
-        .addEventListener('keyup', function () {
-          if (document.getElementById('title-search-input').value !== '') {
-            document
-              .querySelector('.bj-page-header')
-              .classList.add('i-search-input-filled');
-          } else {
-            document
-              .querySelector('.bj-page-header')
-              .classList.remove('i-search-input-filled');
-          }
-        });
+      const searchInput = document.getElementById('title-search-input');
+
+      searchInput.addEventListener('keyup', function () {
+        if (document.getElementById('title-search-input').value !== '') {
+          document
+            .querySelector('.bj-page-header')
+            .classList.add('i-search-input-filled');
+        } else {
+          document
+            .querySelector('.bj-page-header')
+            .classList.remove('i-search-input-filled');
+        }
+      });
+      searchInput.addEventListener('focus', function () {
+        document
+          .querySelector('.bj-page-header')
+          .classList.add('i-search-input-focused');
+      });
+      searchInput.addEventListener('blur', function () {
+        document
+          .querySelector('.bj-page-header')
+          .classList.remove('i-search-input-focused');
+      });
 
       $('.bj-page-header__search-close').click(function (e) {
         e.preventDefault();
