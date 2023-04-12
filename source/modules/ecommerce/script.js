@@ -1,6 +1,10 @@
 ﻿//Yandex ecommerce
 window.dataLayer = window.dataLayer || [];
 
+const productName = document.querySelector('h1')
+  ? document.querySelector('h1').textContent.trim()
+  : '';
+
 //detail
 $('.b-catalog-detail').bind('detail.ecommerce', function () {
   var variant = '';
@@ -10,7 +14,7 @@ $('.b-catalog-detail').bind('detail.ecommerce', function () {
 
   var productObj = {
     id: $('.b-catalog-detail').data('id'),
-    name: document.querySelector('.b-catalog-detail h1').textContent.trim(),
+    name: productName,
     price: parseInt(
       $('.b-catalog-detail__price').text().split(/\s/).join(''),
       10
@@ -45,7 +49,7 @@ $('.b-catalog-detail__button-block .btn-100:not( .i-gray )').click(function () {
 
   var productObj = {
     id: $('.b-catalog-detail').data('id'),
-    name: document.querySelector('.b-catalog-detail h1').textContent.trim(),
+    name: productName,
     price: parseInt(
       $('.b-catalog-detail__price').text().split(/\s/).join(''),
       10
@@ -164,7 +168,7 @@ $('#oneClick').bind('oneClickSuccess.ecommerce', function () {
 
   var productObj = {
     id: $('.b-catalog-detail').data('id'),
-    name: document.querySelector('.b-catalog-detail h1').textContent.trim(),
+    name: productName,
     price: parseInt(
       $('.b-catalog-detail__price').text().split(/\s/).join(''),
       10
